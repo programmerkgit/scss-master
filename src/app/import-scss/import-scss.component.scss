@@ -1,4 +1,5 @@
 @import "color";
+@import "test";
 @import "../../styles";
 .bg-blue {
   background-color: $color;
@@ -9,5 +10,5 @@
 }
 
 .text-red {
-  color: $color-style
+  color: $test
 }
