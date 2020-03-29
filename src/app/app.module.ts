@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ImportScssModule } from './import-scss/import-scss.module';
 import { FunctionScssModule } from './function-scss/function-scss.module';
+import { UseRuleModule } from './use-rule/use-rule.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FunctionScssModule } from './function-scss/function-scss.module';
     BrowserModule,
     AppRoutingModule,
     ImportScssModule,
-    FunctionScssModule
+    FunctionScssModule,
+    UseRuleModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]

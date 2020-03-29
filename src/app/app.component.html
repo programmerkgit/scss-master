@@ -1,6 +1,6 @@
 <header>
   <ul>
-    <li *ngFor="let link of links"><a [routerLink]="link.url">{{link.display || link.url | uppercase}}</a></li>
+    <li *ngFor="let link of links"><a [routerLink]="link.url">{{link.display || link.url |titlecase}}</a></li>
   </ul>
 </header>
 <router-outlet></router-outlet>

@@ -1,5 +1,13 @@
 import { Component } from '@angular/core';
 
+
+interface Link {
+  url: string;
+  display?: string;
+}
+
+type Links = Link[];
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,8 +15,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'scss-master';
-  links = [
+  links: Links = [
     {url: 'function-scss', display: ''},
     {url: 'import-scss'},
+    {url: 'use-rule'},
   ];
 }
