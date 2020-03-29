@@ -1,0 +1,24 @@
+
+
+/*
+If the same stylesheet is imported more than once,
+it will be evaluated again each time. If it just defines
+functions and mixins, this usually isn’t a big deal,
+but if it contains style rules they’ll be compiled
+to CSS more than once.
+*/
+
+$color: blue;
+
+/**
+ Load Path: pass imported files are searched from
+ Partials: Conventional File name started with _color, which file is used dierctly.
+ _index.scss: when directory is loaded, _index.scss is loaded
+ // examples
+
+ file: colors/_index.scss
+ ```
+ @import colors
+ ```
+
+ */
